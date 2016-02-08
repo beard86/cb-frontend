@@ -1,0 +1,15 @@
+{
+	"token": {
+		"Sign into Citi Private Bank In View &gt;":		"Sign into Citi Private Bank In View &gt;",
+		"Forgot your Password or User ID?":		"Forgot your Password or User ID? MA",
+		"Activate token?":		"Activate token? MA",
+		"Client support":		"Client support MA",
+		"Learn about In View?":		"Learn about In View? MA",
+
+	},
+	"regex": [
+		["Budget", "Budget"],
+		["^Something at start of text", ""],
+		["This will be case insensitive", "i", ""]
+	]
+}

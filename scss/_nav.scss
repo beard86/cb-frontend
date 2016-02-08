@@ -1,0 +1,314 @@
+//////////////////
+//NAV//////////////////
+////////////////////
+
+
+nav {
+    z-index: 99999;
+	font-family:$main-light;
+	@include transition(all 5000ms cubic-bezier(0.215, 0.610, 0.355, 1.000)); /* easeOutCubic */
+	@include transition-timing(cubic-bezier(0.215, 0.610, 0.355, 1.000)); /* easeOutCubic */
+	&.blueline {
+	    &:before {
+	    	position: absolute;
+	    	left:0;
+		    top: 0;
+		    width: 54px;
+    		height: 100%;
+    		display: block;
+    		content:' ';
+    		@include gradient(#00bdf2, #004989);
+			@media #{$smartphones} {
+	    		//height: 56px;
+	    		width: 15px;
+				left: 0;
+			}
+			@media #{$widescreen} {
+    		    left: 0;
+			}
+	    }
+    }
+
+	&.navbar {
+		//min-height:116px;
+		border: 0;
+	    border-radius: 0;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		background-color: transparent;
+		@include transition(none);
+		@include  font-size(16px);
+		@media #{$smartphones} {
+			min-height:56px;
+		}
+		@media #{$widescreen} {
+		    max-height: 116px;
+		}
+	}
+	ul {
+		float: right;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+        	@media #{$ninesixty} {
+        		display:none;
+	            &.mobile-nav {
+				    display: inline-block;	            
+				}
+        	}
+        	@media #{$tablets} {
+        	}
+        	@media #{$smartphones} {
+        	}
+        	a {
+				display: block;
+				padding: .25em 1em;
+        	}
+		}
+	}
+
+	.navbar-brand {
+		@include transition(left 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000)); /* easeOutCubic */
+	    left: 0;	
+		width:25%;
+		max-width: 80%;
+		height: auto;
+		float: none;
+		display: inline-block;
+	    vertical-align: middle;
+		font-family: $main-light;
+	    @include font-size(31px);
+		padding-right: 0;
+
+		@media #{$smartphones} {
+			width:44%;
+		    @include font-size(22px);
+		}
+		@media #{$widescreen} {
+			max-height: 112px;
+		    width: auto;
+		}
+	}
+
+	#navbar {
+		padding-left: 0;
+		padding-right:0;
+		display: inline-block;
+	    vertical-align: middle;
+        width: 74%;
+		@media #{$smartphones} {
+			width:54%;
+		}
+		.burger {
+			* {
+				cursor:pointer;
+			}
+			.icon-bar {
+			  display: block;
+			  width: 26px;
+			  height: 1px;
+			  border-radius: 1px;
+			  background-color:$grey;
+			}
+			.icon-bar + .icon-bar {
+		      margin-top: 5px;
+			}
+
+		}
+
+	}
+
+	.container {
+		padding-left:78px;
+			@media #{$smartphones} {
+				padding-left:30px;
+			}
+			@media #{$widescreen} {
+    		    width:100%;
+			}
+	}
+
+	.share {
+		padding-right: 1.8rem;
+		text-align: left;
+	}
+	.opinions {
+		text-indent: -100000px;
+	    display: block;
+        background-image: url(../images/opinions.png);
+	    background-position: 0 0;
+	    background-size: contain;
+	    width: 104.5px;
+	    height: 12px;
+        line-height: 0.2em;	
+	}
+	.exchange {
+		font-family:$main-light-italic;
+		position: relative;
+		color:$grey;
+	    @include font-size(12px);
+        padding-right: 0;
+		&:after {
+			content:' ';
+		    position: absolute;
+		    bottom:5px;
+	        right: -14px;
+			@include sprite($currency_up);
+		}
+	}
+
+	.search {
+		display: inline-block;
+		text-indent:-10000px;
+		@include sprite($search);
+	}
+	//nav overlay state
+	&.black {
+		color: $white;
+		#burger-nav span, 
+		#burger-nav span:before, 
+		#burger-nav span:after {
+			background-color: $white;
+		}
+		#burger-nav.active span {
+		    background-color: transparent;
+		}
+		#navbar {
+			padding-left:0;
+			padding-right:0;
+		}
+		ul li {
+			display: none;
+			&.burger {
+				display: inline-block;
+			}
+		}
+		&.blueline {
+			&:before {
+			    background: transparent;
+			}
+		}
+	}
+	&.close-nav {
+		background-color:transparent;
+		color: $white;
+	    z-index: 999999999999;
+
+		#burger-nav span, 
+		#burger-nav span:before, 
+		#burger-nav span:after {
+			background-color: $white;
+		}
+		#burger-nav.active span {
+		    background-color: transparent;
+		}
+		ul li {
+			display: none;
+			&.burger {
+				display: inline-block;
+			}
+		}
+		.navbar-brand {
+			display: none;
+		}			
+		&.blueline {
+			&:before {
+			    background: transparent;
+			}
+		}
+	}
+}
+
+
+li.burger {
+	cursor: pointer; 
+    padding-right: 0;
+	@media #{$smartphones} {
+	}
+}
+#burger-nav span {
+	text-indent:-10000px;
+}
+#burger-nav { 
+	position: relative;
+	top: 15px;
+    width: 22px;
+    height: 22px;
+	@media #{$smartphones} {
+	}
+}
+#burger-nav span, 
+#burger-nav span:before, 
+#burger-nav span:after {
+  border-radius: 1px;
+  height: 1px;
+  width: 22px;
+  background: $black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#burger-nav span:before {
+  top: -6px; 
+}
+#burger-nav span:after {
+  bottom: -6px;
+}
+
+#burger-nav span, 
+#burger-nav span:before, 
+#burger-nav span:after {
+	@include transition(all 500ms ease-in-out);
+	&:hover {
+	  background-color: $lblue;
+	}
+}
+
+#burger-nav:hover span, 
+#burger-nav:hover span:before, 
+#burger-nav:hover span:after {
+	  background-color: $lblue;
+}
+
+
+#burger-nav.active span {
+  background-color: transparent;
+}
+#burger-nav.active span:before, 
+#burger-nav.active span:after {
+  top: 0;
+}
+#burger-nav.active span:before {
+	@include rotate(45);
+}
+#burger-nav.active span:after {
+	@include rotate(-45);
+}
+.nav-space {
+    padding-top: 122px;
+}
+//bootstrap overrides.
+.navbar>.container .navbar-brand, 
+.navbar>.container-fluid .navbar-brand,
+.container>.navbar-header, 
+.container-fluid>.navbar-header, 
+.container>.navbar-collapse, 
+.container-fluid>.navbar-collapse {
+	margin:0;
+	padding:0;
+}
+.navbar > .container .navbar-brand {
+	//    margin-top: 2.45rem;
+	@media #{$widescreen} {
+	//    margin-left: .5rem;
+	}
+	@media #{$ninesixty} {
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+	@media #{$smartphones} {
+     //	   margin-top: 0.65rem;
+	}
+}

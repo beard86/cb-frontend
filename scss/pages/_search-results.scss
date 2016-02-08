@@ -1,0 +1,40 @@
+#search-results-page {
+  #searchform {
+    .searchBox {
+      border-bottom: 1px solid #000;
+      width: 100%;
+      max-width: 600px;
+      height: 39px;
+      margin-top: 8px;
+    }
+    .magnifyingGlass {
+      float: right;
+      text-indent: -10000px;
+      background-image: url(../images/spritesheet.png);
+      background-position: -204px -21px;
+      width: 19px;
+      height: 19px;
+      position: relative;
+      top: 10px;
+    }
+    #searchbox {
+      border: 0 none;
+      width: 90%;
+      float: left;
+      @include font-size(32px);
+
+    }
+  }
+  #searchContentContainer {
+    margin-top: 70px;
+    width: 55%;
+    .resultBlockText {
+      .teaser {
+        margin-top: calculateRem(16px);
+      }
+    }
+    @media (max-width: 992px) {
+      width: 80%;
+    }
+  }
+}

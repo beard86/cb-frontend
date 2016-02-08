@@ -1,0 +1,58 @@
+$smartphones: "only screen and (max-width: 30rem)";
+
+$tablets: "only screen and  (max-width: 48rem)"; /* (768px) */
+
+$ninehundred: "only screen and  (max-width: 56.25rem)"; /* (900px) */
+
+$ninesixty:  "only screen and  (max-width: 62rem)"; /* (960px) */
+
+$landscape:  "only screen and  (max-width: 64rem)"; /* (1024px) */
+
+$netbooks: "only screen and  (max-width: 68.75rem)"; /* (1100px) */
+
+$navbp: "only screen and  (max-width: 75rem)"; /* (1200px) */
+
+$widescreen: "only screen and (min-width:81.25rem)"; /* (1300px) */
+
+$xx-widescreen: "only screen and (min-width:120.063rem)"; /* (1921px) */
+
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) "; /* 192dpi */
+
+
+/* ===== == = === Base Styles === = == ===== */
+
+
+/* ===== == = === 20em (320px) === = == ===== */
+
+@media only screen and (min-width : 20em) {
+}
+
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (min-width : 30em) {
+}
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+
+@media only screen and (min-width: 37.5em) {
+}
+
+/* ===== == = === 48em (768px) === = == ===== */
+
+@media only screen and (min-width : 48em) {
+}
+
+/* ===== == = === 56.25em (900px) === = == ===== */
+
+@media only screen and (min-width : 56.25em) {
+}
+
+/* ===== == = === 68.75em (1100px) === = == ===== */
+
+@media only screen and (min-width : 68.75em) {
+}
+
+/* ===== == = === 81.25em (1300px) === = == ===== */
+
+@media only screen and (min-width : 81.25em) {
+}

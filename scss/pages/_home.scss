@@ -1,0 +1,153 @@
+////////////////////
+// H O M E ////////
+//////////////////
+
+.accordion {
+
+    li>div {
+	    @include font-size(23px);
+	    line-height: 36px;
+	    font-family:$main-font;
+		max-height: 500px;
+	    max-width: 83.666%;
+		color:$grey;
+		@include transition(max-height 1200ms cubic-bezier(0.600, 0, 0.735, 0.045)); /* easeOutCubic */
+		@include transition-timing(cubic-bezier(0.600, 0, 0.735, 0.045)); /* easeOutCubic */
+		overflow: hidden;
+		@media #{$smartphones} {
+		    @include font-size(18px);
+	        padding-right: 0;
+		}
+		&.heighthidden {
+		    max-height: 0;
+		}
+		a {
+			border-bottom:1px solid;
+		}
+		&.category {
+		    max-width:100%;
+		    width:100%;
+
+		}
+    }
+    li {
+    	>a {
+    		position:relative;
+			@media #{$smartphones} {
+			    @include font-size(25px);
+			}
+    		div {
+				position: relative;
+			    top: -17px;
+			    padding: 12px;
+			    display: inline-block;
+				@media #{$smartphones} {
+					    top: 0;
+				}
+    		}
+    		&.active {
+    			//border-bottom:1px solid $lblue;
+    			//color:$lblue;
+    		}
+    		&:hover,
+    		&:focus {
+    			text-decoration: none;
+    		}
+    		&:focus {
+    			    padding: 0px 10px;
+				    margin: 0 -10px;
+    		}
+    	}
+
+    }
+	&.lighter {
+		a {
+			div {
+				top:0;
+			}
+			&.active {
+				div {
+					top:-2px;
+				}
+				span,
+				span:before,
+				span:after {
+					height: 14px;
+				}
+			}
+		}
+	}
+}
+
+@-webkit-keyframes slide {
+    100% { right:0; }
+}
+
+@keyframes slide {
+    100% { right:0; }
+}
+
+div.lines	{
+	span {
+		&:before {
+		  left: -10px; 
+
+		}
+		&:after {
+		  right: -10px;
+		}
+	}
+	span, 
+	span:before, 
+	span:after {
+		cursor: pointer;
+		border-radius: 1px;
+		height: 10px;
+		width: 1px;
+		background: $lblue;
+		position: absolute;
+		display: block;
+		content: '';
+		@include transition(all 250ms ease-in-out);
+	}
+}
+.accordion {
+	a {
+		&.active {
+			 span {
+			  background-color: transparent;
+
+			 	&:before {
+
+					@include rotate(45);
+
+			 	}
+			 	&:after {
+
+					@include rotate(-45);
+
+			 	}
+			 	&:before,
+			 	&:after {
+					top: 0;
+					left: 0px;
+					height: 24px;
+					@media #{$smartphones} {
+						    height: 17px;
+					}
+			 	}
+			 }
+		}
+	}
+    li {
+    	a.active {
+			div {
+				@include transition(all 250ms ease-in-out);
+				@media #{$smartphones} {
+					    top: -5px;
+				}
+			}
+    	}	
+    }
+}
+

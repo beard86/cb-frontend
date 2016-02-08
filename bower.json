@@ -1,0 +1,8 @@
+{
+  "name": "citi-private-bank-fe",
+  "description": "front end code for citibank's private site",
+  "private": true,
+  "dependencies": {
+    "jquery-infinite-scroll": "~2.1.0"
+  }
+}

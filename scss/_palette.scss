@@ -1,0 +1,44 @@
+$black-blue: #008dff;
+$lblue: #0080ec;
+$mblue: #5d88ab;
+$orange: #f18c00;
+$lorange: #F7D4A4;
+$morange: #efb769;
+$white: #FFFFFF;
+$black: #1e1e1e;
+$cream: #efe9df;
+$purple: #9f58a3;
+$grey: #6f7778;
+$darkgrey:#767676;
+$pink: #c4197f;
+$grey-on-black: #8d939a;
+$red: #d60000;
+//COLORS
+
+.grey-on-black {
+    color:$grey-on-black;
+}
+.lblue {
+    color:$lblue;
+}
+.grey {
+    color:$grey;
+}
+.dark-grey {
+    color:$darkgrey;
+}
+
+.dark-grey-bg {
+    background-color:$black;
+    //background-color: rgba(118, 118, 118, 0.95);
+}
+.white {
+    color:$white;
+}
+.black {
+    color:$black;
+}
+
+.pink {
+	color:$pink;
+}

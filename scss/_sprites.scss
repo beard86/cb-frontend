@@ -1,0 +1,607 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$burger-squares-name: 'burger-squares';
+$burger-squares-x: 141px;
+$burger-squares-y: 134px;
+$burger-squares-offset-x: -141px;
+$burger-squares-offset-y: -134px;
+$burger-squares-width: 20px;
+$burger-squares-height: 14px;
+$burger-squares-total-width: 373px;
+$burger-squares-total-height: 361px;
+$burger-squares-image: '../images/spritesheet.png';
+$burger-squares: (141px, 134px, -141px, -134px, 20px, 14px, 373px, 361px, '../images/spritesheet.png', 'burger-squares', );
+$chevron-back-name: 'chevron-back';
+$chevron-back-x: 113px;
+$chevron-back-y: 101px;
+$chevron-back-offset-x: -113px;
+$chevron-back-offset-y: -101px;
+$chevron-back-width: 11px;
+$chevron-back-height: 18px;
+$chevron-back-total-width: 373px;
+$chevron-back-total-height: 361px;
+$chevron-back-image: '../images/spritesheet.png';
+$chevron-back: (113px, 101px, -113px, -101px, 11px, 18px, 373px, 361px, '../images/spritesheet.png', 'chevron-back', );
+$chevron-down-blue-name: 'chevron-down-blue';
+$chevron-down-blue-x: 22px;
+$chevron-down-blue-y: 12px;
+$chevron-down-blue-offset-x: -22px;
+$chevron-down-blue-offset-y: -12px;
+$chevron-down-blue-width: 11px;
+$chevron-down-blue-height: 7px;
+$chevron-down-blue-total-width: 373px;
+$chevron-down-blue-total-height: 361px;
+$chevron-down-blue-image: '../images/spritesheet.png';
+$chevron-down-blue: (22px, 12px, -22px, -12px, 11px, 7px, 373px, 361px, '../images/spritesheet.png', 'chevron-down-blue', );
+$chevron-down-white-name: 'chevron-down-white';
+$chevron-down-white-x: 77px;
+$chevron-down-white-y: 79px;
+$chevron-down-white-offset-x: -77px;
+$chevron-down-white-offset-y: -79px;
+$chevron-down-white-width: 18px;
+$chevron-down-white-height: 11px;
+$chevron-down-white-total-width: 373px;
+$chevron-down-white-total-height: 361px;
+$chevron-down-white-image: '../images/spritesheet.png';
+$chevron-down-white: (77px, 79px, -77px, -79px, 18px, 11px, 373px, 361px, '../images/spritesheet.png', 'chevron-down-white', );
+$chevron-up-blue-name: 'chevron-up-blue';
+$chevron-up-blue-x: 0px;
+$chevron-up-blue-y: 0px;
+$chevron-up-blue-offset-x: 0px;
+$chevron-up-blue-offset-y: 0px;
+$chevron-up-blue-width: 11px;
+$chevron-up-blue-height: 6px;
+$chevron-up-blue-total-width: 373px;
+$chevron-up-blue-total-height: 361px;
+$chevron-up-blue-image: '../images/spritesheet.png';
+$chevron-up-blue: (0px, 0px, 0px, 0px, 11px, 6px, 373px, 361px, '../images/spritesheet.png', 'chevron-up-blue', );
+$chevron-up-white-name: 'chevron-up-white';
+$chevron-up-white-x: 95px;
+$chevron-up-white-y: 90px;
+$chevron-up-white-offset-x: -95px;
+$chevron-up-white-offset-y: -90px;
+$chevron-up-white-width: 18px;
+$chevron-up-white-height: 11px;
+$chevron-up-white-total-width: 373px;
+$chevron-up-white-total-height: 361px;
+$chevron-up-white-image: '../images/spritesheet.png';
+$chevron-up-white: (95px, 90px, -95px, -90px, 18px, 11px, 373px, 361px, '../images/spritesheet.png', 'chevron-up-white', );
+$currency-up-name: 'currency_up';
+$currency-up-x: 11px;
+$currency-up-y: 6px;
+$currency-up-offset-x: -11px;
+$currency-up-offset-y: -6px;
+$currency-up-width: 11px;
+$currency-up-height: 6px;
+$currency-up-total-width: 373px;
+$currency-up-total-height: 361px;
+$currency-up-image: '../images/spritesheet.png';
+$currency-up: (11px, 6px, -11px, -6px, 11px, 6px, 373px, 361px, '../images/spritesheet.png', 'currency_up', );
+$footer-logo-name: 'footer-logo';
+$footer-logo-x: 161px;
+$footer-logo-y: 148px;
+$footer-logo-offset-x: -161px;
+$footer-logo-offset-y: -148px;
+$footer-logo-width: 22px;
+$footer-logo-height: 15px;
+$footer-logo-total-width: 373px;
+$footer-logo-total-height: 361px;
+$footer-logo-image: '../images/spritesheet.png';
+$footer-logo: (161px, 148px, -161px, -148px, 22px, 15px, 373px, 361px, '../images/spritesheet.png', 'footer-logo', );
+$glasses-name: 'glasses';
+$glasses-x: 292px;
+$glasses-y: 304px;
+$glasses-offset-x: -292px;
+$glasses-offset-y: -304px;
+$glasses-width: 39px;
+$glasses-height: 15px;
+$glasses-total-width: 373px;
+$glasses-total-height: 361px;
+$glasses-image: '../images/spritesheet.png';
+$glasses: (292px, 304px, -292px, -304px, 39px, 15px, 373px, 361px, '../images/spritesheet.png', 'glasses', );
+$grid-view-name: 'grid-view';
+$grid-view-x: 44px;
+$grid-view-y: 30px;
+$grid-view-offset-x: -44px;
+$grid-view-offset-y: -30px;
+$grid-view-width: 13px;
+$grid-view-height: 13px;
+$grid-view-total-width: 373px;
+$grid-view-total-height: 361px;
+$grid-view-image: '../images/spritesheet.png';
+$grid-view: (44px, 30px, -44px, -30px, 13px, 13px, 373px, 361px, '../images/spritesheet.png', 'grid-view', );
+$left-arrow-mobile-name: 'left-arrow-mobile';
+$left-arrow-mobile-x: 57px;
+$left-arrow-mobile-y: 43px;
+$left-arrow-mobile-offset-x: -57px;
+$left-arrow-mobile-offset-y: -43px;
+$left-arrow-mobile-width: 10px;
+$left-arrow-mobile-height: 18px;
+$left-arrow-mobile-total-width: 373px;
+$left-arrow-mobile-total-height: 361px;
+$left-arrow-mobile-image: '../images/spritesheet.png';
+$left-arrow-mobile: (57px, 43px, -57px, -43px, 10px, 18px, 373px, 361px, '../images/spritesheet.png', 'left-arrow-mobile', );
+$left-arrow-name: 'left-arrow';
+$left-arrow-x: 252px;
+$left-arrow-y: 232px;
+$left-arrow-offset-x: -252px;
+$left-arrow-offset-y: -232px;
+$left-arrow-width: 20px;
+$left-arrow-height: 36px;
+$left-arrow-total-width: 373px;
+$left-arrow-total-height: 361px;
+$left-arrow-image: '../images/spritesheet.png';
+$left-arrow: (252px, 232px, -252px, -232px, 20px, 36px, 373px, 361px, '../images/spritesheet.png', 'left-arrow', );
+$play-sm-name: 'play-sm';
+$play-sm-x: 202px;
+$play-sm-y: 182px;
+$play-sm-offset-x: -202px;
+$play-sm-offset-y: -182px;
+$play-sm-width: 25px;
+$play-sm-height: 25px;
+$play-sm-total-width: 373px;
+$play-sm-total-height: 361px;
+$play-sm-image: '../images/spritesheet.png';
+$play-sm: (202px, 182px, -202px, -182px, 25px, 25px, 373px, 361px, '../images/spritesheet.png', 'play-sm', );
+$play-name: 'play';
+$play-x: 331px;
+$play-y: 319px;
+$play-offset-x: -331px;
+$play-offset-y: -319px;
+$play-width: 42px;
+$play-height: 42px;
+$play-total-width: 373px;
+$play-total-height: 361px;
+$play-image: '../images/spritesheet.png';
+$play: (331px, 319px, -331px, -319px, 42px, 42px, 373px, 361px, '../images/spritesheet.png', 'play', );
+$plus-name: 'plus';
+$plus-x: 33px;
+$plus-y: 19px;
+$plus-offset-x: -33px;
+$plus-offset-y: -19px;
+$plus-width: 11px;
+$plus-height: 11px;
+$plus-total-width: 373px;
+$plus-total-height: 361px;
+$plus-image: '../images/spritesheet.png';
+$plus: (33px, 19px, -33px, -19px, 11px, 11px, 373px, 361px, '../images/spritesheet.png', 'plus', );
+$right-arrow-mobile-name: 'right-arrow-mobile';
+$right-arrow-mobile-x: 67px;
+$right-arrow-mobile-y: 61px;
+$right-arrow-mobile-offset-x: -67px;
+$right-arrow-mobile-offset-y: -61px;
+$right-arrow-mobile-width: 10px;
+$right-arrow-mobile-height: 18px;
+$right-arrow-mobile-total-width: 373px;
+$right-arrow-mobile-total-height: 361px;
+$right-arrow-mobile-image: '../images/spritesheet.png';
+$right-arrow-mobile: (67px, 61px, -67px, -61px, 10px, 18px, 373px, 361px, '../images/spritesheet.png', 'right-arrow-mobile', );
+$right-arrow-name: 'right-arrow';
+$right-arrow-x: 272px;
+$right-arrow-y: 268px;
+$right-arrow-offset-x: -272px;
+$right-arrow-offset-y: -268px;
+$right-arrow-width: 20px;
+$right-arrow-height: 36px;
+$right-arrow-total-width: 373px;
+$right-arrow-total-height: 361px;
+$right-arrow-image: '../images/spritesheet.png';
+$right-arrow: (272px, 268px, -272px, -268px, 20px, 36px, 373px, 361px, '../images/spritesheet.png', 'right-arrow', );
+$search-name: 'search';
+$search-x: 183px;
+$search-y: 163px;
+$search-offset-x: -183px;
+$search-offset-y: -163px;
+$search-width: 19px;
+$search-height: 19px;
+$search-total-width: 373px;
+$search-total-height: 361px;
+$search-image: '../images/spritesheet.png';
+$search: (183px, 163px, -183px, -163px, 19px, 19px, 373px, 361px, '../images/spritesheet.png', 'search', );
+$social-name: 'social';
+$social-x: 227px;
+$social-y: 207px;
+$social-offset-x: -227px;
+$social-offset-y: -207px;
+$social-width: 25px;
+$social-height: 25px;
+$social-total-width: 373px;
+$social-total-height: 361px;
+$social-image: '../images/spritesheet.png';
+$social: (227px, 207px, -227px, -207px, 25px, 25px, 373px, 361px, '../images/spritesheet.png', 'social', );
+$warning-name: 'warning';
+$warning-x: 124px;
+$warning-y: 119px;
+$warning-offset-x: -124px;
+$warning-offset-y: -119px;
+$warning-width: 17px;
+$warning-height: 15px;
+$warning-total-width: 373px;
+$warning-total-height: 361px;
+$warning-image: '../images/spritesheet.png';
+$warning: (124px, 119px, -124px, -119px, 17px, 15px, 373px, 361px, '../images/spritesheet.png', 'warning', );
+$burger-squares-2x-name: 'burger-squares@2x';
+$burger-squares-2x-x: 282px;
+$burger-squares-2x-y: 268px;
+$burger-squares-2x-offset-x: -282px;
+$burger-squares-2x-offset-y: -268px;
+$burger-squares-2x-width: 40px;
+$burger-squares-2x-height: 28px;
+$burger-squares-2x-total-width: 746px;
+$burger-squares-2x-total-height: 722px;
+$burger-squares-2x-image: '../images/spritesheet@2x.png';
+$burger-squares-2x: (282px, 268px, -282px, -268px, 40px, 28px, 746px, 722px, '../images/spritesheet@2x.png', 'burger-squares@2x', );
+$chevron-back-2x-name: 'chevron-back@2x';
+$chevron-back-2x-x: 226px;
+$chevron-back-2x-y: 202px;
+$chevron-back-2x-offset-x: -226px;
+$chevron-back-2x-offset-y: -202px;
+$chevron-back-2x-width: 22px;
+$chevron-back-2x-height: 36px;
+$chevron-back-2x-total-width: 746px;
+$chevron-back-2x-total-height: 722px;
+$chevron-back-2x-image: '../images/spritesheet@2x.png';
+$chevron-back-2x: (226px, 202px, -226px, -202px, 22px, 36px, 746px, 722px, '../images/spritesheet@2x.png', 'chevron-back@2x', );
+$chevron-down-blue-2x-name: 'chevron-down-blue@2x';
+$chevron-down-blue-2x-x: 44px;
+$chevron-down-blue-2x-y: 24px;
+$chevron-down-blue-2x-offset-x: -44px;
+$chevron-down-blue-2x-offset-y: -24px;
+$chevron-down-blue-2x-width: 22px;
+$chevron-down-blue-2x-height: 14px;
+$chevron-down-blue-2x-total-width: 746px;
+$chevron-down-blue-2x-total-height: 722px;
+$chevron-down-blue-2x-image: '../images/spritesheet@2x.png';
+$chevron-down-blue-2x: (44px, 24px, -44px, -24px, 22px, 14px, 746px, 722px, '../images/spritesheet@2x.png', 'chevron-down-blue@2x', );
+$chevron-down-white-2x-name: 'chevron-down-white@2x';
+$chevron-down-white-2x-x: 154px;
+$chevron-down-white-2x-y: 158px;
+$chevron-down-white-2x-offset-x: -154px;
+$chevron-down-white-2x-offset-y: -158px;
+$chevron-down-white-2x-width: 36px;
+$chevron-down-white-2x-height: 22px;
+$chevron-down-white-2x-total-width: 746px;
+$chevron-down-white-2x-total-height: 722px;
+$chevron-down-white-2x-image: '../images/spritesheet@2x.png';
+$chevron-down-white-2x: (154px, 158px, -154px, -158px, 36px, 22px, 746px, 722px, '../images/spritesheet@2x.png', 'chevron-down-white@2x', );
+$chevron-up-blue-2x-name: 'chevron-up-blue@2x';
+$chevron-up-blue-2x-x: 0px;
+$chevron-up-blue-2x-y: 0px;
+$chevron-up-blue-2x-offset-x: 0px;
+$chevron-up-blue-2x-offset-y: 0px;
+$chevron-up-blue-2x-width: 22px;
+$chevron-up-blue-2x-height: 12px;
+$chevron-up-blue-2x-total-width: 746px;
+$chevron-up-blue-2x-total-height: 722px;
+$chevron-up-blue-2x-image: '../images/spritesheet@2x.png';
+$chevron-up-blue-2x: (0px, 0px, 0px, 0px, 22px, 12px, 746px, 722px, '../images/spritesheet@2x.png', 'chevron-up-blue@2x', );
+$chevron-up-white-2x-name: 'chevron-up-white@2x';
+$chevron-up-white-2x-x: 190px;
+$chevron-up-white-2x-y: 180px;
+$chevron-up-white-2x-offset-x: -190px;
+$chevron-up-white-2x-offset-y: -180px;
+$chevron-up-white-2x-width: 36px;
+$chevron-up-white-2x-height: 22px;
+$chevron-up-white-2x-total-width: 746px;
+$chevron-up-white-2x-total-height: 722px;
+$chevron-up-white-2x-image: '../images/spritesheet@2x.png';
+$chevron-up-white-2x: (190px, 180px, -190px, -180px, 36px, 22px, 746px, 722px, '../images/spritesheet@2x.png', 'chevron-up-white@2x', );
+$currency-up-2x-name: 'currency_up@2x';
+$currency-up-2x-x: 22px;
+$currency-up-2x-y: 12px;
+$currency-up-2x-offset-x: -22px;
+$currency-up-2x-offset-y: -12px;
+$currency-up-2x-width: 22px;
+$currency-up-2x-height: 12px;
+$currency-up-2x-total-width: 746px;
+$currency-up-2x-total-height: 722px;
+$currency-up-2x-image: '../images/spritesheet@2x.png';
+$currency-up-2x: (22px, 12px, -22px, -12px, 22px, 12px, 746px, 722px, '../images/spritesheet@2x.png', 'currency_up@2x', );
+$footer-logo-2x-name: 'footer-logo@2x';
+$footer-logo-2x-x: 322px;
+$footer-logo-2x-y: 296px;
+$footer-logo-2x-offset-x: -322px;
+$footer-logo-2x-offset-y: -296px;
+$footer-logo-2x-width: 44px;
+$footer-logo-2x-height: 30px;
+$footer-logo-2x-total-width: 746px;
+$footer-logo-2x-total-height: 722px;
+$footer-logo-2x-image: '../images/spritesheet@2x.png';
+$footer-logo-2x: (322px, 296px, -322px, -296px, 44px, 30px, 746px, 722px, '../images/spritesheet@2x.png', 'footer-logo@2x', );
+$glasses-2x-name: 'glasses@2x';
+$glasses-2x-x: 584px;
+$glasses-2x-y: 608px;
+$glasses-2x-offset-x: -584px;
+$glasses-2x-offset-y: -608px;
+$glasses-2x-width: 78px;
+$glasses-2x-height: 30px;
+$glasses-2x-total-width: 746px;
+$glasses-2x-total-height: 722px;
+$glasses-2x-image: '../images/spritesheet@2x.png';
+$glasses-2x: (584px, 608px, -584px, -608px, 78px, 30px, 746px, 722px, '../images/spritesheet@2x.png', 'glasses@2x', );
+$grid-view-2x-name: 'grid-view@2x';
+$grid-view-2x-x: 88px;
+$grid-view-2x-y: 60px;
+$grid-view-2x-offset-x: -88px;
+$grid-view-2x-offset-y: -60px;
+$grid-view-2x-width: 26px;
+$grid-view-2x-height: 26px;
+$grid-view-2x-total-width: 746px;
+$grid-view-2x-total-height: 722px;
+$grid-view-2x-image: '../images/spritesheet@2x.png';
+$grid-view-2x: (88px, 60px, -88px, -60px, 26px, 26px, 746px, 722px, '../images/spritesheet@2x.png', 'grid-view@2x', );
+$left-arrow-mobile-2x-name: 'left-arrow-mobile@2x';
+$left-arrow-mobile-2x-x: 114px;
+$left-arrow-mobile-2x-y: 86px;
+$left-arrow-mobile-2x-offset-x: -114px;
+$left-arrow-mobile-2x-offset-y: -86px;
+$left-arrow-mobile-2x-width: 20px;
+$left-arrow-mobile-2x-height: 36px;
+$left-arrow-mobile-2x-total-width: 746px;
+$left-arrow-mobile-2x-total-height: 722px;
+$left-arrow-mobile-2x-image: '../images/spritesheet@2x.png';
+$left-arrow-mobile-2x: (114px, 86px, -114px, -86px, 20px, 36px, 746px, 722px, '../images/spritesheet@2x.png', 'left-arrow-mobile@2x', );
+$left-arrow-2x-name: 'left-arrow@2x';
+$left-arrow-2x-x: 504px;
+$left-arrow-2x-y: 464px;
+$left-arrow-2x-offset-x: -504px;
+$left-arrow-2x-offset-y: -464px;
+$left-arrow-2x-width: 40px;
+$left-arrow-2x-height: 72px;
+$left-arrow-2x-total-width: 746px;
+$left-arrow-2x-total-height: 722px;
+$left-arrow-2x-image: '../images/spritesheet@2x.png';
+$left-arrow-2x: (504px, 464px, -504px, -464px, 40px, 72px, 746px, 722px, '../images/spritesheet@2x.png', 'left-arrow@2x', );
+$play-sm-2x-name: 'play-sm@2x';
+$play-sm-2x-x: 404px;
+$play-sm-2x-y: 364px;
+$play-sm-2x-offset-x: -404px;
+$play-sm-2x-offset-y: -364px;
+$play-sm-2x-width: 50px;
+$play-sm-2x-height: 50px;
+$play-sm-2x-total-width: 746px;
+$play-sm-2x-total-height: 722px;
+$play-sm-2x-image: '../images/spritesheet@2x.png';
+$play-sm-2x: (404px, 364px, -404px, -364px, 50px, 50px, 746px, 722px, '../images/spritesheet@2x.png', 'play-sm@2x', );
+$play-2x-name: 'play@2x';
+$play-2x-x: 662px;
+$play-2x-y: 638px;
+$play-2x-offset-x: -662px;
+$play-2x-offset-y: -638px;
+$play-2x-width: 84px;
+$play-2x-height: 84px;
+$play-2x-total-width: 746px;
+$play-2x-total-height: 722px;
+$play-2x-image: '../images/spritesheet@2x.png';
+$play-2x: (662px, 638px, -662px, -638px, 84px, 84px, 746px, 722px, '../images/spritesheet@2x.png', 'play@2x', );
+$plus-2x-name: 'plus@2x';
+$plus-2x-x: 66px;
+$plus-2x-y: 38px;
+$plus-2x-offset-x: -66px;
+$plus-2x-offset-y: -38px;
+$plus-2x-width: 22px;
+$plus-2x-height: 22px;
+$plus-2x-total-width: 746px;
+$plus-2x-total-height: 722px;
+$plus-2x-image: '../images/spritesheet@2x.png';
+$plus-2x: (66px, 38px, -66px, -38px, 22px, 22px, 746px, 722px, '../images/spritesheet@2x.png', 'plus@2x', );
+$right-arrow-mobile-2x-name: 'right-arrow-mobile@2x';
+$right-arrow-mobile-2x-x: 134px;
+$right-arrow-mobile-2x-y: 122px;
+$right-arrow-mobile-2x-offset-x: -134px;
+$right-arrow-mobile-2x-offset-y: -122px;
+$right-arrow-mobile-2x-width: 20px;
+$right-arrow-mobile-2x-height: 36px;
+$right-arrow-mobile-2x-total-width: 746px;
+$right-arrow-mobile-2x-total-height: 722px;
+$right-arrow-mobile-2x-image: '../images/spritesheet@2x.png';
+$right-arrow-mobile-2x: (134px, 122px, -134px, -122px, 20px, 36px, 746px, 722px, '../images/spritesheet@2x.png', 'right-arrow-mobile@2x', );
+$right-arrow-2x-name: 'right-arrow@2x';
+$right-arrow-2x-x: 544px;
+$right-arrow-2x-y: 536px;
+$right-arrow-2x-offset-x: -544px;
+$right-arrow-2x-offset-y: -536px;
+$right-arrow-2x-width: 40px;
+$right-arrow-2x-height: 72px;
+$right-arrow-2x-total-width: 746px;
+$right-arrow-2x-total-height: 722px;
+$right-arrow-2x-image: '../images/spritesheet@2x.png';
+$right-arrow-2x: (544px, 536px, -544px, -536px, 40px, 72px, 746px, 722px, '../images/spritesheet@2x.png', 'right-arrow@2x', );
+$search-2x-name: 'search@2x';
+$search-2x-x: 366px;
+$search-2x-y: 326px;
+$search-2x-offset-x: -366px;
+$search-2x-offset-y: -326px;
+$search-2x-width: 38px;
+$search-2x-height: 38px;
+$search-2x-total-width: 746px;
+$search-2x-total-height: 722px;
+$search-2x-image: '../images/spritesheet@2x.png';
+$search-2x: (366px, 326px, -366px, -326px, 38px, 38px, 746px, 722px, '../images/spritesheet@2x.png', 'search@2x', );
+$social-2x-name: 'social@2x';
+$social-2x-x: 454px;
+$social-2x-y: 414px;
+$social-2x-offset-x: -454px;
+$social-2x-offset-y: -414px;
+$social-2x-width: 50px;
+$social-2x-height: 50px;
+$social-2x-total-width: 746px;
+$social-2x-total-height: 722px;
+$social-2x-image: '../images/spritesheet@2x.png';
+$social-2x: (454px, 414px, -454px, -414px, 50px, 50px, 746px, 722px, '../images/spritesheet@2x.png', 'social@2x', );
+$warning-2x-name: 'warning@2x';
+$warning-2x-x: 248px;
+$warning-2x-y: 238px;
+$warning-2x-offset-x: -248px;
+$warning-2x-offset-y: -238px;
+$warning-2x-width: 34px;
+$warning-2x-height: 30px;
+$warning-2x-total-width: 746px;
+$warning-2x-total-height: 722px;
+$warning-2x-image: '../images/spritesheet@2x.png';
+$warning-2x: (248px, 238px, -248px, -238px, 34px, 30px, 746px, 722px, '../images/spritesheet@2x.png', 'warning@2x', );
+$spritesheet-width: 373px;
+$spritesheet-height: 361px;
+$spritesheet-image: '../images/spritesheet.png';
+$spritesheet-sprites: ($burger-squares, $chevron-back, $chevron-down-blue, $chevron-down-white, $chevron-up-blue, $chevron-up-white, $currency-up, $footer-logo, $glasses, $grid-view, $left-arrow-mobile, $left-arrow, $play-sm, $play, $plus, $right-arrow-mobile, $right-arrow, $search, $social, $warning, );
+$spritesheet: (373px, 361px, '../images/spritesheet.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 746px;
+$retina-spritesheet-height: 722px;
+$retina-spritesheet-image: '../images/spritesheet@2x.png';
+$retina-spritesheet-sprites: ($burger-squares-2x, $chevron-back-2x, $chevron-down-blue-2x, $chevron-down-white-2x, $chevron-up-blue-2x, $chevron-up-white-2x, $currency-up-2x, $footer-logo-2x, $glasses-2x, $grid-view-2x, $left-arrow-mobile-2x, $left-arrow-2x, $play-sm-2x, $play-2x, $plus-2x, $right-arrow-mobile-2x, $right-arrow-2x, $search-2x, $social-2x, $warning-2x, );
+$retina-spritesheet: (746px, 722px, '../images/spritesheet@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$burger-squares-group-name: 'burger-squares';
+$burger-squares-group: ('burger-squares', $burger-squares, $burger-squares-2x, );
+$chevron-back-group-name: 'chevron-back';
+$chevron-back-group: ('chevron-back', $chevron-back, $chevron-back-2x, );
+$chevron-down-blue-group-name: 'chevron-down-blue';
+$chevron-down-blue-group: ('chevron-down-blue', $chevron-down-blue, $chevron-down-blue-2x, );
+$chevron-down-white-group-name: 'chevron-down-white';
+$chevron-down-white-group: ('chevron-down-white', $chevron-down-white, $chevron-down-white-2x, );
+$chevron-up-blue-group-name: 'chevron-up-blue';
+$chevron-up-blue-group: ('chevron-up-blue', $chevron-up-blue, $chevron-up-blue-2x, );
+$chevron-up-white-group-name: 'chevron-up-white';
+$chevron-up-white-group: ('chevron-up-white', $chevron-up-white, $chevron-up-white-2x, );
+$currency-up-group-name: 'currency_up';
+$currency-up-group: ('currency_up', $currency-up, $currency-up-2x, );
+$footer-logo-group-name: 'footer-logo';
+$footer-logo-group: ('footer-logo', $footer-logo, $footer-logo-2x, );
+$glasses-group-name: 'glasses';
+$glasses-group: ('glasses', $glasses, $glasses-2x, );
+$grid-view-group-name: 'grid-view';
+$grid-view-group: ('grid-view', $grid-view, $grid-view-2x, );
+$left-arrow-mobile-group-name: 'left-arrow-mobile';
+$left-arrow-mobile-group: ('left-arrow-mobile', $left-arrow-mobile, $left-arrow-mobile-2x, );
+$left-arrow-group-name: 'left-arrow';
+$left-arrow-group: ('left-arrow', $left-arrow, $left-arrow-2x, );
+$play-sm-group-name: 'play-sm';
+$play-sm-group: ('play-sm', $play-sm, $play-sm-2x, );
+$play-group-name: 'play';
+$play-group: ('play', $play, $play-2x, );
+$plus-group-name: 'plus';
+$plus-group: ('plus', $plus, $plus-2x, );
+$right-arrow-mobile-group-name: 'right-arrow-mobile';
+$right-arrow-mobile-group: ('right-arrow-mobile', $right-arrow-mobile, $right-arrow-mobile-2x, );
+$right-arrow-group-name: 'right-arrow';
+$right-arrow-group: ('right-arrow', $right-arrow, $right-arrow-2x, );
+$search-group-name: 'search';
+$search-group: ('search', $search, $search-2x, );
+$social-group-name: 'social';
+$social-group: ('social', $social, $social-2x, );
+$warning-group-name: 'warning';
+$warning-group: ('warning', $warning, $warning-2x, );
+$retina-groups: ($burger-squares-group, $chevron-back-group, $chevron-down-blue-group, $chevron-down-white-group, $chevron-up-blue-group, $chevron-up-white-group, $currency-up-group, $footer-logo-group, $glasses-group, $grid-view-group, $left-arrow-mobile-group, $left-arrow-group, $play-sm-group, $play-group, $plus-group, $right-arrow-mobile-group, $right-arrow-group, $search-group, $social-group, $warning-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
